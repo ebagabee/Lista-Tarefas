@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 
-@Entity()
+@Entity('task')
 export class TaskEntity {
     @PrimaryGeneratedColumn()
     id: number;
@@ -11,6 +11,6 @@ export class TaskEntity {
     @Column()
     description: string;
 
-    @Column()
+    @Column({ type: 'timestamptz', nullable: true })
     deadline: Date
 }

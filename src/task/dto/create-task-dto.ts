@@ -11,5 +11,5 @@ export class CreateTaskDto {
     
     @IsOptional()
     @IsISO8601()
-    deadline: string;
+    deadline?: string;
 }

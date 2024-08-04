@@ -27,7 +27,7 @@ export class TaskService {
         const taskData = await this.taskRepository.findOneBy({ id });
 
         if (!taskData) {
-            throw new HttpException('Usuário não encontrado', 404);
+            throw new HttpException('Tarefa não encontrada', 404);
         }
 
         return taskData;

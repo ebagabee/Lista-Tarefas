@@ -40,7 +40,7 @@ export class TaskController {
       return {
         success: true,
         data,
-        message: 'Todos os usuarios foram encontrados'
+        message: 'Todos as tarefas foram encontrados'
       };
     } catch (error) {
       return {
